@@ -1,3 +1,4 @@
+
 import numpy as np
 import utilty.Filter as f
 import cv2
@@ -102,8 +103,7 @@ def gearDefectDetect():
     borderSize = filterSize // 2
 
 
-
-    image = addBorder(borderSize, raw_image)
+    image = addBorder(borderSize,  raw_image)
     cv2.imshow("orjinal image", image[1:raw_image.shape[0] + borderSize, 1:raw_image.shape[1] + borderSize])
     cv2.waitKey(1000)
 
